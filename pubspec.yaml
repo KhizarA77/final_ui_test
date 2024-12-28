@@ -1,0 +1,26 @@
+name: ui_final
+description: "A new Flutter project."
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  flutter_screenutil: ^5.9.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  golden_toolkit: ^0.15.0
+  flutter_lints: ^5.0.0
+
+flutter:
+  assets:
+    - assets/
+  uses-material-design: true
