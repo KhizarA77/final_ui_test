@@ -29,7 +29,7 @@ class NavContainer extends StatelessWidget {
               borderRadius: BorderRadius.circular(10),
             ),
             padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 8.h),
-            child: Text('View Report'),
+            child: Text('View Report', style: TextStyle()),
           )
         ],
       ),

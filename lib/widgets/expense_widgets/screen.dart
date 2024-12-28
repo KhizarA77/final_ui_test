@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ui_final/widgets/expense_widgets/charts_container.dart';
+import 'package:ui_final/widgets/expense_widgets/footer_container.dart';
 import 'package:ui_final/widgets/expense_widgets/nav_container.dart';
 
 class Screen extends StatelessWidget {
@@ -15,7 +16,8 @@ class Screen extends StatelessWidget {
       child: Column(
         children: [
           NavContainer(),
-          // ChartsContainer(),
+          ChartsContainer(),
+          FooterContainer(),
         ],
       ),
     );

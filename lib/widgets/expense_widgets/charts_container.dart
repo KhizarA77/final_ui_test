@@ -7,109 +7,99 @@ class ChartsContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: const Color.fromARGB(255, 255, 255, 255),
-      height: double.infinity,
       width: double.infinity,
-      child: Row(
+      height: 300,
+      alignment: Alignment.center,
+      child: Stack(
+        alignment: Alignment.center,
         children: [
-          Container(
-            width: 187.w,
-            height: 200.h,
-            color: const Color.fromARGB(255, 255, 255, 255),
-            child: Stack(
-              alignment: Alignment.center,
-              children: [
-                Container(
-                  width: 125.w,
-                  height: 125.h,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: const Color.fromARGB(255, 167, 147, 249),
-                  ),
-                ),
-                Text(
+          Positioned(
+            left: 30,
+            child: Container(
+              width: 180,
+              height: 180,
+              decoration: BoxDecoration(
+                color: Colors.purple.withOpacity(0.2),
+                shape: BoxShape.circle,
+              ),
+              child: Center(
+                child: Text(
                   '48%',
                   style: TextStyle(
-                    fontSize: 24.sp,
+                    fontSize: 24,
                     fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(185, 77, 28, 255),
+                    color: Colors.purple,
                   ),
                 ),
-              ],
+              ),
             ),
           ),
-          Container(
-            width: 187.w,
-            height: 300.h,
-            color: const Color.fromARGB(255, 255, 255, 255),
-            child: Stack(
-              // alignment: Alignment.center,
-              children: [
-                Positioned(
-                  top: 0,
-                  left: 0,
-                  child: Container(
-                    width: 110.w,
-                    height: 110.h,
-                    decoration: BoxDecoration(
-                      color: const Color.fromARGB(255, 167, 147, 249),
-                      shape: BoxShape.circle,
-                    ),
-                    child: Center(
-                      child: Text(
-                        '32%',
-                        style: TextStyle(
-                          fontSize: 20,
-                          color: const Color.fromARGB(255, 111, 255, 116),
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
+          Positioned(
+            right: 10,
+            top: 50,
+            child: Container(
+              width: 120,
+              height: 120,
+              decoration: BoxDecoration(
+                color: Colors.green.withOpacity(0.2),
+                shape: BoxShape.circle,
+              ),
+              child: Center(
+                child: Text(
+                  '32%',
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.green,
                   ),
                 ),
-                Positioned(top:110,left: 100,
-                  child: Container(
-                  width: 60.w,
-                  height: 50.h,
-                  decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 248, 190, 123),
-                    shape: BoxShape.circle,
-                  ),
-                  child: Center(
-                    child: Text(
-                      '7%',
-                      style: TextStyle(
-                        fontSize: 20,
-                        color: const Color.fromARGB(255, 111, 255, 116),
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                ),
-                ),
-                Positioned(top:150,left:20,
-                  child: Container(
-                  width: 60.w,
-                  height: 50.h,
-                  decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 248, 190, 123),
-                    shape: BoxShape.circle,
-                  ),
-                  child: Center(
-                    child: Text(
-                      '13%',
-                      style: TextStyle(
-                        fontSize: 20,
-                        color: const Color.fromARGB(255, 231, 91, 73),
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                ),
-                ),
-              ],
+              ),
             ),
-          )
+          ),
+          Positioned(
+            left: 180,
+            bottom: 10,
+            child: Container(
+              width: 90,
+              height: 90,
+              decoration: BoxDecoration(
+                color: Colors.red.withOpacity(0.2),
+                shape: BoxShape.circle,
+              ),
+              child: Center(
+                child: Text(
+                  '13%',
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.red,
+                  ),
+                ),
+              ),
+            ),
+          ),
+          Positioned(
+            right: 30,
+            bottom: 60,
+            child: Container(
+              width: 60,
+              height: 60,
+              decoration: BoxDecoration(
+                color: Colors.orange.withOpacity(0.2),
+                shape: BoxShape.circle,
+              ),
+              child: Center(
+                child: Text(
+                  '7%',
+                  style: TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.orange,
+                  ),
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );
